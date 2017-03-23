@@ -1,6 +1,11 @@
 #!/bin/sh
 ####################################################
+<<<<<<< HEAD
 #	Usage: checklog <wf_logname>		   #
+=======
+#	Usage: JobLogCheck <wf_logname>		   #
+#
+>>>>>>> dd4611475d1037ae40a4bbb2a8cf8b1999b5bcfe
 ####################################################
 
 function checkWF()
