@@ -8,14 +8,14 @@ function checkWF()
 {
 ### Renaming the wrong name
 namelog=$1
-case  $namelog  in
-    invoice_fact_xclick)
-	namelog="xclick_invoice_fact";;
-    T_CUST_ACCT_CLCTN)
-        namelog="T_CLCTN";;
-    wf_rpymnt_fact_us)
-	namelog="wf_rpymnt_fact";;
-        *);;
+#case  $namelog  in
+#    invoice_fact_xclick)
+#	namelog="xclick_invoice_fact";;
+#   T_CUST_ACCT_CLCTN)
+#       namelog="T_CLCTN";;
+#    wf_rpymnt_fact_us)
+#	namelog="wf_rpymnt_fact";;
+#        *);;
 esac
 
 ### Variables
