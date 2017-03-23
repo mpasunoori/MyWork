@@ -1,9 +1,7 @@
 #!/bin/sh
 ####################################################
 #	Usage: checklog <wf_logname>		   #
-#						   #
-#	Written by Sumyan Narmaev		   #
-#	Copyright (C) 2014, PayPal, Inc.	   #
+#
 ####################################################
 
 function checkWF()
@@ -30,16 +28,6 @@ SESSIONLOGERROR="ORA|err|input";
 
 ### No case sensitive
 shopt -s nocaseglob
-
-### Remove the list of folders for update
-#rm $FOLDERS 2> /dev/null
-
-### Make a list of directories and subdirectories
-#for i in $main $path1 $path2 $path3 $finops
-#do
-#    find $i -type d | perl -lne 'print tr:/::, " $_"' | sort -n | cut -d' ' -f2 >> $FOLDERS
-#	find $i -type d -print >> $FOLDERS 
-#done
 
 ### Search for error in the list of folders
 FILE=$FOLDERS;
